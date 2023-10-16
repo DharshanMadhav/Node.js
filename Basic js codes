@@ -5,3 +5,67 @@ console.log("printing from 0 to 9 using a for loop");
 for (let a = 0; a < 10; a++) {
     console.log(a);
    }
+
+//print from 0 to 9 using a while loop.
+console.log("printing from 0 to 9 using a while loop");
+
+let a = 0; 
+
+while(a < 10)
+
+{
+    console.log(a);
+    a++;
+   }
+
+//print from 0 to 9 using a do..while loop.
+console.log("printing from 0 to 9 using a do...while loop");
+
+   let a = 0;
+
+   do {
+    console.log(a);
+    a++;} 
+    
+    while (a < 10);
+
+//print from 0 to 27 using a while loop, but omit the numbers that can be divided by 3.
+console.log("printing outputs by removing all the duplicates of these list");
+
+let a = 0; 
+
+while(a < 27){
+    if(a%3!==0)
+    {
+        console.log(a);
+    }
+    a++;
+}
+
+ //I need to remove the duplicates of these list. One idea is creating an array first with the duplicated values and then passing through a SET to remove them.
+"ford","toyota","ford","nissan","bmw","ford","toyota".
+
+let cars = [];
+
+cars.push("ford");
+cars.push("toyota");
+cars.push("ford");
+cars.push("nissan");
+cars.push("bmw");
+cars.push("ford");
+cars.push("toyota")
+
+cars.forEach((cars) => {console.log(cars);});
+
+let uniquecompany = new Set();
+
+console.log("Printing without duplicate");
+
+for(let i=0; i<cars. length;i++)
+{
+    uniquecompany.add(cars[i])
+}
+uniquecompany.forEach((cars) => {console.log(cars);});
+
+
+
