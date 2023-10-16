@@ -1,0 +1,9 @@
+//The IT leader has requested to you to create a simple Sign up Form that allow to send:
+First Name
+Last Name
+Country
+Phone number
+Password.
+use the proper routing to display the form. 
+use the proper routing to process the form.
+use the proper Http method for this purpose and create a response printing in the screen all the values send by the user.
