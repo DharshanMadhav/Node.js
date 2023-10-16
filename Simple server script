@@ -1,0 +1,10 @@
+//The Financial Department has requested to the IT leader to create a simple message response saying "We are under construction" when they visit the webpage of the company. 
+For that the IT leader has requested to you to create a simple server script that returns back the message when they type localhost:3000
+
+var http = require('http');
+
+var server = http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end("We are under construction");
+});
+server.listen(3000,function (){ console.log("server listening on port 3000")});
