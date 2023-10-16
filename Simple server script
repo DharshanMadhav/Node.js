@@ -8,3 +8,13 @@ var server = http.createServer(function (req, res) {
   res.end("We are under construction");
 });
 server.listen(3000,function (){ console.log("server listening on port 3000")});
+
+//Another Example
+var http = require('http');
+
+var server = http.createServer(function (req, res) {
+    console.log("REQUEST METHOD" + req.method);
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end("Dharshan \n" + req.method);
+});
+server.listen(8080,function (){ console.log("server listening on port 8080")});
