@@ -1,0 +1,39 @@
+//Declare a router with the following:
+Imagine we need to send information from the client to the server about a car and we need to capture information contained in the URL.
+As params pass maker (ford, nissan etc) and model (focus,sentra, etc)
+As query string pass color, millage, engine
+Create a response that prints something like that:
+Values passed as params:
+Maker: Ford
+Model: Focus
+Values passed as query string
+Color: red
+Millage:50k
+Engine: 2.5L
+
+//Code
+const express = require('express');
+const app = express();
+
+app.get('/car/:maker/:model', (req, res) => {
+    const { maker, model } = req.params;
+
+  const { color, mileage, engine } = req.query;
+
+  const response = `
+    Values passed as params:
+    Maker: ${maker}
+    Model: ${model}
+    
+    Values passed as query string:
+    Color: ${color || 'N/A'}
+    Millage: ${mileage || 'N/A'}
+    Engine: ${engine || 'N/A'}
+  `;
+  res.send(response);
+});
+
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
