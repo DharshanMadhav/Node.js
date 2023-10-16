@@ -1,0 +1,7 @@
+//Basic js codes
+//print from 0 to 9 using a for loop.
+console.log("printing from 0 to 9 using a for loop");
+
+for (let a = 0; a < 10; a++) {
+    console.log(a);
+   }
