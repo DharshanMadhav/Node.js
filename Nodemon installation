@@ -1,0 +1,27 @@
+//Commands to deploy a nodemon
+
+npm install -g nodemon
+
+nodemon app.js
+
+npm start
+
+//Below json file will be created
+
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
